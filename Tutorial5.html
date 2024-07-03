@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tutorial 5</title>
+        <meta charset="UTF-8">
+        <style>
+            .correct{
+                color:green;
+                font-weight: bold;
+                
+            }
+
+            .incorrect{
+                color:red;
+                font-weight: bold;
+            }
+
+            fieldset{
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center">A Simple Maths Game</h1>
+
+        <p><strong>Question 01</strong>:
+            <span id = "question1"></span>
+            <span id = "answer1"></span>
+            <span id = "feedback1"></span>
+            </p>
+            <script>
+                document.getElementById("question1").innerHTML = "8 + 7 = ... ";
+        
+                var answer = prompt("8 + 7 = ... ");
+                var result;
+                var count = 0;
+        
+                if (answer == 15) {
+                    result = "correct";
+                } else {
+                    result = "incorrect";
+                }
+    
+                var feedback = document.getElementById("feedback1");
+        
+                if (result == "correct") {
+                    feedback.innerHTML = "&checkmark; Your answer is correct!";
+                    feedback.classList.add("correct");
+                    count += 1;
+                } else {
+                    feedback.innerHTML = answer + "&cross; The correct answer is 15";
+                    feedback.classList.add("incorrect");
+                }
+            </script>
+
+        <p><strong>Question 02</strong>:
+            <span id = "question2"></span>
+            <span id = "answer2"></span>
+            <span id = "feedback2"></span>
+        </p>
+        <script>
+            document.getElementById("question2").innerHTML = "8 * 7 = ... ";
+    
+            var answer = prompt("8 * 7 = ... ");
+            var result;
+    
+            if (answer == 56) {
+                result = "correct";
+            } else {
+                result = "incorrect";
+            }
+    
+            var feedback = document.getElementById("feedback2");
+    
+            if (result == "correct") {
+                feedback.innerHTML = "&checkmark; Your answer is correct!";
+                feedback.classList.add("correct");
+                count += 1;
+            } else {
+                feedback.innerHTML = answer + "&cross; The correct answer is 56";
+                feedback.classList.add("incorrect");
+            }
+        </script>
+
+        <p><strong>Question 03</strong>:
+            <span id = "question3"></span>
+            <span id = "answer3"></span>
+            <span id = "feedback3"></span>
+        </p>
+        <script>
+            document.getElementById("question3").innerHTML = "8 - 7 = ... ";
+    
+            var answer = prompt("8 - 7 = ... ");
+            var result;
+    
+            if (answer == 1) {
+                result = "correct";
+            } else {
+                result = "incorrect";
+            }
+    
+            var feedback = document.getElementById("feedback3");
+    
+            if (result == "correct") {
+                feedback.innerHTML = "&checkmark; Your answer is correct!";
+                feedback.classList.add("correct");
+                count += 1;
+            } else {
+                feedback.innerHTML = answer + "&cross; The correct answer is 1";
+                feedback.classList.add("incorrect");
+            }
+        </script>
+
+        <p><strong>Question 04</strong>:
+            <span id = "question4"></span>
+            <span id = "answer4"></span>
+            <span id = "feedback4"></span>
+        </p>
+        <script>
+            document.getElementById("question4").innerHTML = "10 * 10 = ... ";
+    
+            var answer = prompt("10 * 10 = ... ");
+            var result;
+    
+            if (answer == 100) {
+                result = "correct";
+            } else {
+                result = "incorrect";
+            }
+    
+            var feedback = document.getElementById("feedback4");
+    
+            if (result == "correct") {
+                feedback.innerHTML = "&checkmark; Your answer is correct!";
+                feedback.classList.add("correct");
+                count += 1;
+            } else {
+                feedback.innerHTML = answer + "&cross; The correct answer is 100";
+                feedback.classList.add("incorrect");
+            }
+        </script>
+
+        <p><strong>Question 05</strong>:
+            <span id = "question5"></span>
+            <span id = "answer5"></span>
+            <span id = "feedback5"></span>
+        </p>
+        <script>
+            document.getElementById("question5").innerHTML = "15 - 12 = ... ";
+    
+            var answer = prompt("15 -12 = ... ");
+            var result;
+    
+            if (answer == 3) {
+                result = "correct";
+            } else {
+                result = "incorrect";
+            }
+    
+            var feedback = document.getElementById("feedback5");
+    
+            if (result == "correct") {
+                feedback.innerHTML = "&checkmark; Your answer is correct!";
+                feedback.classList.add("correct");
+                count += 1;
+            } else {
+                feedback.innerHTML = answer + "&cross; The correct answer is 3";
+                feedback.classList.add("incorrect");
+            }
+        </script>
+
+        <p><strong>Question 06</strong>:
+            <span id = "question6"></span>
+            <span id = "answer6"></span>
+            <span id = "feedback6"></span>
+        </p>
+        <script>
+            document.getElementById("question6").innerHTML = "18 + 7 = ... ";
+    
+            var answer = prompt("18 + 7 = ... ");
+            var result;
+    
+            if (answer == 25) {
+                result = "correct";
+            } else {
+                result = "incorrect";
+            }
+    
+            var feedback = document.getElementById("feedback6");
+    
+            if (result == "correct") {
+                feedback.innerHTML = "&checkmark; Your answer is correct!";
+                feedback.classList.add("correct");
+                count += 1;
+            } else {
+                feedback.innerHTML = answer + "&cross; The correct answer is 25";
+                feedback.classList.add("incorrect");
+            }
+        </script>
+
+        <p><strong>Question 07</strong>:
+            <span id = "question7"></span>
+            <span id = "answer7"></span>
+            <span id = "feedback7"></span>
+        </p>
+        <script>
+            document.getElementById("question7").innerHTML = "8 + 16 = ... ";
+    
+            var answer = prompt("8 + 16 = ... ");
+            var result;
+    
+            if (answer == 24) {
+                result = "correct";
+            } else {
+                result = "incorrect";
+            }
+    
+            var feedback = document.getElementById("feedback7");
+    
+            if (result == "correct") {
+                feedback.innerHTML = "&checkmark; Your answer is correct!";
+                feedback.classList.add("correct");
+                count += 1;
+            } else {
+                feedback.innerHTML = answer + "&cross; The correct answer is 24";
+                feedback.classList.add("incorrect");
+            }
+        </script>
+
+        <p><strong>Question 08</strong>:
+            <span id = "question8"></span>
+            <span id = "answer8"></span>
+            <span id = "feedback8"></span>
+        </p>
+        <script>
+            document.getElementById("question8").innerHTML = "8 - 5 = ... ";
+    
+            var answer = prompt("8 - 5 = ... ");
+            var result;
+    
+            if (answer == 3) {
+                result = "correct";
+            } else {
+                result = "incorrect";
+            }
+    
+            var feedback = document.getElementById("feedback8");
+    
+            if (result == "correct") {
+                feedback.innerHTML = "&checkmark; Your answer is correct!";
+                feedback.classList.add("correct");
+                count += 1;
+            } else {
+                feedback.innerHTML = answer + "&cross; The correct answer is 3";
+                feedback.classList.add("incorrect");
+            }
+        </script>
+
+        <p><strong>Question 09</strong>:
+            <span id = "question9"></span>
+            <span id = "answer9"></span>
+            <span id = "feedback9"></span>
+        </p>
+        <script>
+            document.getElementById("question9").innerHTML = "9 + 7 = ... ";
+    
+            var answer = prompt("9 + 7 = ... ");
+            var result;
+    
+            if (answer == 16) {
+                result = "correct";
+            } else {
+                result = "incorrect";
+            }
+    
+            var feedback = document.getElementById("feedback9");
+    
+            if (result == "correct") {
+                feedback.innerHTML = "&checkmark; Your answer is correct!";
+                feedback.classList.add("correct");
+                count += 1;
+            } else {
+                feedback.innerHTML = answer + "&cross; The correct answer is 16";
+                feedback.classList.add("incorrect");
+            }
+        </script>
+
+        <p><strong>Question 10</strong>:
+            <span id = "question10"></span>
+            <span id = "answer10"></span>
+            <span id = "feedback10"></span>
+        </p>
+        <script>
+            document.getElementById("question10").innerHTML = "8 + 6 = ... ";
+    
+            var answer = prompt("8 + 6 = ... ");
+            var result;
+    
+            if (answer == 14) {
+                result = "correct";
+            } else {
+                result = "incorrect";
+            }
+    
+            var feedback = document.getElementById("feedback10");
+    
+            if (result == "correct") {
+                feedback.innerHTML = "&checkmark; Your answer is correct!";
+                feedback.classList.add("correct");
+                count += 1;
+            } else {
+                feedback.innerHTML = answer + "&cross; The correct answer is 14";
+                feedback.classList.add("incorrect");
+            }
+        </script>
+        <script>
+            var marks = count * 10;
+        </script>
+        <p><strong>Your Score</strong>:
+            <span id = "score">
+                <script>
+                    var feedback = document.getElementById("score");
+                    feedback.innerHTML = marks;
+                </script>
+            </span>
+        </p>
+    </body>
+</html>
