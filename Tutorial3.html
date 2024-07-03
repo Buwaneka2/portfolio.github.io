@@ -9,6 +9,10 @@
 
 		}
 
+		body{
+			margin: 0;
+		}
+
 		h2 {
 			padding: 3px;
 			background-color: LightSkyBlue; 
@@ -24,11 +28,17 @@
 			
 		}
 
-		div ol {
+		nav  {
 			overflow: hidden;
 			position: fixed;
 			top: 0; 
 			width: 100%;
+			background-color: LightSkyBlue;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		nav a {
 			background-color: LightSkyBlue;
 			
 		}
@@ -40,12 +50,12 @@
 </head>
 <body>
 <div>
-	<ol>
-		<li><a href="">Tutorials</a></li>           
-		<li><a href="">University Work</a></li>           
-		<li><a href="">Web Stuff</a></li>       
-		<li><a href="">Social Media</a></li>
-	</ol>
+	<nav>
+		<a href="">Tutorials</a>           
+		<a href="">University Work</a>          
+		<a href="">Web Stuff</a>      
+		<a href="">Social Media</a>
+	</nav>
 </div>
 <div>
 	<h1>My Useful Links</h1>
@@ -53,7 +63,7 @@
 	<img src = "Img/tut.png" alt = "Tutorial image">
 	<h2 id = "Tutorial">Tutorials</h2>
 
-<dl>
+		<dl>
 			<dt><a href = "Tutorial 1.html">Tutorial 1</a></dt>
 			<dd>This is a link to my first tutorial, where I practiced basic html &amp; CSS.</dd>
 
